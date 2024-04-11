@@ -26,33 +26,6 @@ This led me to decide to dig deeper into understanding the source of my convicti
 
 * * *
 
-  
-
-  
-
-[**India GDP Growth Story**    **1**](https://docs.google.com/document/d/19EluxYLGhFZeqmZZhm4LdeUwU2D8RruIUOzN3BugfJo/edit#heading=h.ey0yt1ym9d85)
-
-[**Indian Economy Resiliency**    **3**](https://docs.google.com/document/d/19EluxYLGhFZeqmZZhm4LdeUwU2D8RruIUOzN3BugfJo/edit#heading=h.6o96ug678v7d)
-
-[**Indian Foreign Exchange Reserves**    **3**](https://docs.google.com/document/d/19EluxYLGhFZeqmZZhm4LdeUwU2D8RruIUOzN3BugfJo/edit#heading=h.n1ydrjhrbjbn)
-
-[**Foreign Direct Investments**    **4**](https://docs.google.com/document/d/19EluxYLGhFZeqmZZhm4LdeUwU2D8RruIUOzN3BugfJo/edit#heading=h.r1hf3tjvxkgx)
-
-[**India's inclusion in GBI-EM index**    **4**](https://docs.google.com/document/d/19EluxYLGhFZeqmZZhm4LdeUwU2D8RruIUOzN3BugfJo/edit#heading=h.5qy3k63npz1k)
-
-[**India’s inclusion in Bloomberg (EM) Local Currency Government Index**    **5**](https://docs.google.com/document/d/19EluxYLGhFZeqmZZhm4LdeUwU2D8RruIUOzN3BugfJo/edit#heading=h.md9ohlnrob24)
-
-[**Conclusion**    **5**](https://docs.google.com/document/d/19EluxYLGhFZeqmZZhm4LdeUwU2D8RruIUOzN3BugfJo/edit#heading=h.gegljbc78m8u)
-
-  
-
-  
-
-* * *
-
-  
-
-  
 
 India GDP Growth Story
 ----------------------

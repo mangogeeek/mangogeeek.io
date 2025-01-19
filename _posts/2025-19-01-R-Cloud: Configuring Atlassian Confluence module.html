@@ -1,0 +1,889 @@
+<h2 id="h_01JG0NR213WNN01HHHTNDV0351">
+  <span class="wysiwyg-color-purple110">Outline</span>
+</h2>
+<table style="border-collapse: collapse; width: 100%;">
+  <tbody>
+    <tr>
+      <td style="width: 100%; background-color: #d3d3d3;">
+        <ul>
+          <li>
+            <strong><span class="wysiwyg-font-size-small"><a href="/hc/en-us/articles/17075992141724#h_01JG0NR21319EKDHF90YP6RQ9T">Preface</a></span></strong>
+          </li>
+          <li>
+            <strong><span class="wysiwyg-font-size-small"><a href="/hc/en-us/articles/17075992141724#h_01JG0NR213GZK9DMRVXCDRTVFV">Steps to be followed</a></span></strong>
+            <ul>
+              <li>
+                <strong><span class="wysiwyg-font-size-small"><a href="/hc/en-us/articles/17075992141724#h_01JG0NR213YH4Y63ADMWSKRW2G">1. Prerequisites</a></span></strong>
+                <ul>
+                  <li>
+                    <span class="wysiwyg-font-size-small"><a href="/hc/en-us/articles/17075992141724#h_01JG0NR214MT69SBWBNTG962TN">1.1 Organization name</a></span>
+                  </li>
+                  <li>
+                    <span class="wysiwyg-font-size-small"><a href="/hc/en-us/articles/17075992141724#h_01JG0NR214RKRMZ2DHACFCB8C2">1.2 User Email Address and API Token</a></span>
+                    <ul>
+                      <li>
+                        <span class="wysiwyg-font-size-small"><a href="/hc/en-us/articles/17075992141724#h_01JG0NR214SGVWH9RKJ3GNFRHE">API Token</a></span>
+                      </li>
+                      <li>
+                        <span class="wysiwyg-font-size-small"><a href="/hc/en-us/articles/17075992141724#h_01JG0NR2147NPC20068ASYT7B3">Email Address</a></span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="wysiwyg-font-size-small"><a href="/hc/en-us/articles/17075992141724#h_01JG0NR214V92WG3P45YR1NABC">1.3 Permissions</a></span>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong><span class="wysiwyg-font-size-small"><a href="/hc/en-us/articles/17075992141724#h_01JG0NR21454P2S5QE5Y61R09R">2. Permission Assignment</a></span></strong>
+                <ul>
+                  <li>
+                    <span class="wysiwyg-font-size-small"><a href="/hc/en-us/articles/17075992141724#h_01JG0NR2146268F82D5YTHSZWE">2.1 Backup Permissions</a></span>
+                    <ul>
+                      <li>
+                        <span class="wysiwyg-font-size-small"><a href="/hc/en-us/articles/17075992141724#h_01JG0NR214J0HR42JPDPZBHNWH">2.1.1 Assign Global Permissions</a></span>
+                      </li>
+                      <li>
+                        <span class="wysiwyg-font-size-small"><a href="/hc/en-us/articles/17075992141724#h_01JG0NR214G18EKARV5HDJEJDC">2.1.2 Verify Product Role Assignment</a></span>
+                      </li>
+                      <li>
+                        <span class="wysiwyg-font-size-small"><a href="/hc/en-us/articles/17075992141724#h_01JG0NR214WJKCCMGF1RN856PH">2.1.3 Assign Space Access Permissions</a></span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="wysiwyg-font-size-small"><a href="/hc/en-us/articles/17075992141724#h_01JG0NR214XJ6FS1EX5VX6JAV6">2.2 Restore Permissions</a></span>
+                    <ul>
+                      <li>
+                        <span class="wysiwyg-font-size-small"><a href="/hc/en-us/articles/17075992141724#h_01JG0NR214AAQCRX22TAF29X9M">2.2.1 Approaches</a></span>
+                      </li>
+                      <li>
+                        <span class="wysiwyg-font-size-small"><a href="/hc/en-us/articles/17075992141724#h_01JG0NR214DKGNXBAZKBZ3QTPE">2.2.2 Procedure</a></span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong><span class="wysiwyg-font-size-small"><a href="/hc/en-us/articles/17075992141724#h_01JG0NR214JEX22DRP2ZCJD2B7">3. Add Atlassian Confluence as an R-Cloud module in HYCU R-Cloud</a></span></strong>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="h_01JG0NR21319EKDHF90YP6RQ9T">
+  <span class="wysiwyg-color-purple110">Preface</span>
+</h2>
+<p>
+  Atlassian Confluence is a team workspace for collaborating on documents, knowledge
+  bases, and wikis. It's ideal for sharing information, brainstorming, and creating
+  a single source of truth. For confluence use cases, you can refer to the
+  <span class="wysiwyg-underline"><em><a href="https://www.atlassian.com/software/confluence/resources/guides/best-practices/use-cases#it-support" target="_blank" rel="noopener noreferrer">Atlassian documentation</a></em></span>.
+</p>
+<p>
+  Before diving into the configuration steps, let's first explore the Atlassian
+  Jira products supported by HYCU R-Cloud. To learn more about each supported SaaS
+  application in the Atlassian ecosystem, please visit the
+  <span class="wysiwyg-underline"><em><a href="https://docs.r-cloud.hycu.com/saas-applications/module-guides.html" target="_blank" rel="noopener noreferrer">SaaS application guides</a></em></span>.
+</p>
+<p>
+  This article outlines the steps to configure and add Atlassian Confluence as
+  an R-Cloud module with minimal required permissions. To protect your Atlassian
+  Confluence data, you must add the R-Cloud Confluence module to HYCU R-Cloud as
+  a source.
+</p>
+<h2 id="h_01JG0NR213GZK9DMRVXCDRTVFV">
+  <span class="wysiwyg-color-purple110">Steps to be followed</span>
+</h2>
+<h3 id="h_01JG0NR213YH4Y63ADMWSKRW2G">
+  <span class="wysiwyg-color-purple110">1. Prerequisites</span>
+</h3>
+<ul>
+  <li>
+    <em>Organization name (Product URL)</em>
+  </li>
+  <li>
+    <em>User Email Address and API Token</em>
+  </li>
+  <li>
+    <em>Permission requirements</em>
+  </li>
+</ul>
+<h3 id="h_01JG0NR214MT69SBWBNTG962TN">
+  <span class="wysiwyg-color-purple110">1.1 Organization name</span>
+</h3>
+<p>
+  To find your JIRA product URL, navigate to the Atlassian administration console
+  at
+  <span class="wysiwyg-underline"><em><a href="http://admin.atlassian.com" target="_blank" rel="noopener noreferrer">admin.atlassian.com</a>.</em></span>
+  If you manage multiple organizations, select the appropriate one. Then, go to
+  the <strong>Products</strong> section and choose
+  <strong>Product URLs.</strong>
+</p>
+<p>
+  💡 The organization name in Atlassian Cloud identifies each JIRA product. This
+  name acts as a prefix within the product URL. For instance, in the URL<span class="wysiwyg-underline"><em> <a href="https://demohycu.atlassian.net" target="_blank" rel="noopener noreferrer">https://demohycu.atlassian.net</a></em></span>,
+  <strong>demohycu</strong> is the organization name.
+</p>
+<p>
+  <img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdf3bocVTQtbzBVfL7JkHLC2PIelNGXDtNOCtP78Xthz4TeYavcm8KVOe1bj8z4_jSdaoBwN5A7JF8C6VVQTZt-fYPn6gPI9LJ0ryBir2RIZf39BG1yaJtER2DRi6i3KA?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="">
+</p>
+<h3 id="h_01JG0NR214RKRMZ2DHACFCB8C2">
+  <span class="wysiwyg-color-purple110">1.2 User Email Address and API Token</span>
+</h3>
+<h4 id="h_01JG0NR214SGVWH9RKJ3GNFRHE">
+  <span class="wysiwyg-color-purple110">API Token</span>
+</h4>
+<p>
+  API tokens in Jira are used to authenticate 3rd party tools with Atlassian Cloud
+  products. HYCU uses the API token for authentication while adding the product
+  as a source.
+</p>
+<ul>
+  <li>
+    To create and manage
+    <span class="wysiwyg-underline"><em><a href="https://id.atlassian.com/manage-profile/security/api-tokens" target="_blank" rel="noopener noreferrer">API tokens</a></em></span>
+    in Jira Cloud, you can navigate to
+    <strong>Your profile → Account Setting (Manage your account) → Security→ Create and manage API tokens</strong>.
+  </li>
+</ul>
+<p class="wysiwyg-indent2">
+  <img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXenZDrO7KuJtkkUW8xIgyL-X4EWsJJw-ntMpPpDEV6MmYAj2FH7nScRniek-ZrMLd9DtPWKC0rFzHzmjDp0k3kEOFRI29hIHK4SC07zuJCj7vCpVwMwqG4Exs4lbk5xiRg?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="">
+</p>
+<ul>
+  <li>
+    Click <strong>Create API token</strong>.
+  </li>
+</ul>
+<p class="wysiwyg-indent2">
+  <img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdvs0Dc1Qp0TN0KaoEZOsRm7mnMwaXPzQKHTUS1ShI7XbogvYgG_j6pf3ASANBCA0_TnIyECQxVOQ9okmogvb1n-TC9ccLWUmpd-T4_9JsYtpBglL_YX8nHGPZzUed44Rs?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="">
+</p>
+<ul>
+  <li>
+    Next, on the <strong>Create an API token</strong> page, enter a concise label
+    (e.g., demohycu) for your token and click Create.
+  </li>
+</ul>
+<p class="wysiwyg-indent2">
+  <img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeVIOKIhw1gvnqXGp2Rh4UzN9t6G-5vbUjyklvKOHJP0NiZ8_wFUDwvr-J3ZawzQQPWQUjitNd1Yza0Conta1jbD07az7ondxzHWoAj6NWiCvMIjeqm1gfDLIIagYnRq7Q?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="">
+</p>
+<ul>
+  <li>
+    On the opened <strong>Your new API token</strong> page, click
+    <strong>Copy</strong> to copy the token.
+  </li>
+</ul>
+<p class="wysiwyg-indent2">
+  <img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcz6Q1NMQRiZyh6alvYALolpBJUzCSL83m-HD9yLaU7Wj2_Q6rmsuNXkeHgLncoO0MEmu7Qk44YguzAie1LQv80QEIry-9j4n9k5uu6HfYk70Iz8DBVDyHGKX0RoL26Fg?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="">.
+</p>
+<ul>
+  <li>
+    Once copied, click <strong>Close</strong>.
+  </li>
+</ul>
+<p class="wysiwyg-indent2">
+  <img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcExAwAN59sacskJr7drV4CwIB26PQJP2eSzfQsmo38RsAUeAb2sAl5Ww3fNZeidD623IdLNXxwTkB029G09xeJd67KdQBzpnC0NzHSx7HfI7z6XZzwXFNHU9cCl6GOkfY?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="">
+</p>
+<hr>
+<p>
+  <strong><span class="wysiwyg-font-size-small wysiwyg-color-pink110">Note ⚠️</span></strong>
+</p>
+<p>
+  <span class="wysiwyg-font-size-small wysiwyg-color-pink110">If the Atlassian source is not getting discovered after adding the module to HYCU. Make sure to verify whether the API token was mistakenly generated via <a href="https://admin.atlassian.com/" target="_blank" rel="noopener noreferrer"><em>https://admin.atlassian.com/.</em></a> This method is used to generate Atlassian organization Admin APIs. Instead, use the method explained above. The API token should be generated for the profile in use.</span>
+</p>
+<hr>
+<h4 id="h_01JG0NR2147NPC20068ASYT7B3">
+  <span class="wysiwyg-color-purple110">Email Address</span>
+</h4>
+<p>
+  To <strong>Copy</strong> user email Address in Jira Cloud, you can navigate to
+  <strong>Your profile → Account Setting (Manage your account) → Email</strong>.
+</p>
+<p>
+  <img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXd41CHNkwmoJVaL9Xye80-AzNqwaqHz9eDHI52OzfpjZNeZzg5xSZetcqnuOhviVU2fXhvmPh6jHip2qQlsJsvYXfSZzvSX3N6i5YZhJL64v9BZ46u5h_2t-2CD844FR8s?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="">
+</p>
+<h3 id="h_01JG0NR214V92WG3P45YR1NABC">
+  <span class="wysiwyg-color-purple110">1.3 Permissions</span>
+</h3>
+<p>
+  To successfully add Atlassian Confluence as an R-Cloud module within HYCU, the
+  Atlassian user must possess:
+</p>
+<ul>
+  <li>
+    <em><strong>Confluence Admin</strong> Global permission</em>
+  </li>
+  <li>
+    <em><strong>View All</strong> access at the Confluence space level</em>
+  </li>
+</ul>
+<h3 id="h_01JG0NR21454P2S5QE5Y61R09R">
+  <span class="wysiwyg-color-purple110">2. Permission Assignment</span>
+</h3>
+<p>
+  <strong>Company:</strong> A financial services firm heavily reliant on Atlassian
+  Confluence for collaboration and documentation related to projects and issue
+  tracking. All these documents are maintained within a Confluence space named
+  <strong>"Repository."</strong>
+</p>
+<p>
+  <strong>Challenge:</strong> The company has implemented a strict security policy,
+  enforcing the principle of least privilege. This policy prohibits default administrative
+  user groups (Site or Global admins) from possessing Confluence admin permissions.
+  Consequently, the user performing backups cannot maintain permanent restore (write)
+  privileges, as this would violate the least privilege principle. Restore privileges
+  should only be granted when a restore operation is necessary.
+</p>
+<p>
+  <strong>Solution:</strong> The company has decided to utilize dedicated Groups:
+</p>
+<ul>
+  <li>
+    <em><strong>confluence-backup-admin:</strong> For performing Confluence data backups.</em>
+  </li>
+  <li>
+    <em><strong>confluence-restore-admin:</strong> For performing Confluence data restores.</em>
+  </li>
+</ul>
+<p>
+  A dedicated user account named <strong>Liam Gray</strong> maintains the role
+  of Confluence Admin. Importantly, neither of these groups will have any other
+  Global or Project-level permissions.
+</p>
+<h3 id="h_01JG0NR2146268F82D5YTHSZWE">
+  <span class="wysiwyg-color-purple110">2.1 Backup Permissions</span>
+</h3>
+<p>
+  Now, let's implement the solution. First, let's assign the following to the group
+  named <strong>"confluence-backup-admin"</strong>:
+</p>
+<ul>
+  <li>
+    <em>Confluence Product Admin role</em>
+  </li>
+  <li>
+    <em>Space Access (View All) permission</em>
+  </li>
+</ul>
+<table style="height: 454px;">
+  <tbody>
+    <tr style="height: 16px;">
+      <td style="background-color: #d3d3d3; width: 155px; height: 16px;" colspan="1" rowspan="1">
+        <p>
+          <strong><span class="wysiwyg-font-size-small">Group</span></strong>
+        </p>
+      </td>
+      <td style="background-color: #d3d3d3; width: 108px; height: 16px;" colspan="1" rowspan="1">
+        <p>
+          <strong><span class="wysiwyg-font-size-small">Global Permission</span></strong>
+        </p>
+      </td>
+      <td style="background-color: #d3d3d3; width: 90px; height: 16px;" colspan="1" rowspan="1">
+        <p>
+          <strong><span class="wysiwyg-font-size-small">Space access</span></strong>
+        </p>
+      </td>
+      <td style="background-color: #d3d3d3; width: 301px; height: 16px;" colspan="1" rowspan="1">
+        <p>
+          <strong><span class="wysiwyg-font-size-small">Description</span></strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="height: 438px;">
+      <td style="vertical-align: top; width: 155px; height: 438px;" colspan="1" rowspan="1">
+        <p>
+          <span class="wysiwyg-font-size-small"><a href="https://admin.atlassian.com/o/d9cef7dc-16c4-4939-a08d-f1652bb790c8/groups/35d3e237-b53a-4345-a3c2-a9e4d3ba61e5">confluence-backup-admin</a></span>
+        </p>
+      </td>
+      <td style="vertical-align: top; width: 108px; height: 438px;" colspan="1" rowspan="1">
+        <p>
+          <span class="wysiwyg-font-size-small">Confluence Admin</span>
+        </p>
+      </td>
+      <td style="vertical-align: top; width: 90px; height: 438px;" colspan="1" rowspan="1">
+        <p>
+          <span class="wysiwyg-font-size-small">View All</span>
+        </p>
+      </td>
+      <td style="width: 301px; height: 438px;" colspan="1" rowspan="1">
+        <p>
+          <span class="wysiwyg-font-size-small">Users who are part of this group can back up Atlassian Confluence using the HYCU SaaS module.</span>
+        </p>
+        <ul>
+          <li>
+            <span class="wysiwyg-font-size-small">The group needs to be assigned the <strong>Confluence Product Admin</strong> role.</span>
+          </li>
+          <li>
+            <span class="wysiwyg-font-size-small">Having <strong>personal space</strong> or <strong>creating space</strong> permissions is optional for this group.</span>
+          </li>
+        </ul>
+        <p>
+          <span class="wysiwyg-font-size-small"><img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdCNrq3787YDUfZdo4L-xFVoXN8oXZUdxivARkAdDHkFLaGZEtM6PbHe9hbmQfZY_4YnoDjToZpam862PSXcjMg4KyjSvyyB_GDjoyDYiN_0eHQdAqPZQgDAkqNJos88Q?key=RpdGUlEladyv5D6EoeMhvkhJ" alt=""></span>
+        </p>
+        <p>
+          <span class="wysiwyg-font-size-small">To ensure the <strong>"confluence-backup-admin"</strong> group can access the Confluence space and its components for backup purposes, they must be granted V<strong>iew access at the space level</strong>.</span>
+        </p>
+        <p>
+          <span class="wysiwyg-font-size-small"><img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXelRcLaN1ky3mp0w-XSNjUo2Rm3gA3CWl0Sb1yg3DGu2xChuo55M0uQu9UeFf7N_YLYZVgy6rYLEmSpICUJZGXw7fE1qmJfdXlSxClvOtVvLGn8jQwk8kLk_p8bwt5UxFE?key=RpdGUlEladyv5D6EoeMhvkhJ" alt=""></span>
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>&nbsp;</p>
+<h4 id="h_01JG0NR214J0HR42JPDPZBHNWH">
+  <span class="wysiwyg-color-purple110">2.1.1 Assign Global Permissions</span>
+</h4>
+<h4 id="h_01JG0NR214MZ5XH0QMAEPT7S5E">
+  <span class="wysiwyg-color-purple110 wysiwyg-font-size-small">Prerequisites:</span>
+</h4>
+<ul>
+  <li>
+    <strong>Logged-in User:</strong> Must have <strong>org-admin</strong> or<strong> site-admin</strong>
+    privileges.
+  </li>
+  <li>
+    <strong>Group:</strong> The <strong>"confluence-backup-admin"</strong> group
+    has already been created.
+  </li>
+</ul>
+<p class="wysiwyg-indent2">
+  <img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXc9VijxWm5g47kWxLFaWyJp0nJ939nZ0heaQj48eTGbCrxYUKa5DQgxTUpblKEbA30zpfhEzGerWws9q-gWAmkW_1KuN0KZrhkvt7dZFgv8WYz41S158eD1qGnVHowGa4Q?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="">
+</p>
+<h4 id="h_01JG0NR214QHT7XZXEXQ3TXT9P">
+  <span class="wysiwyg-font-size-small wysiwyg-color-purple110">Procedure</span>
+</h4>
+<p>
+  To configure the <strong>Confluence Product Admin</strong> role for the group,
+  the logged in<strong> Org or Site admin</strong> must navigate to the
+  <strong>User Management</strong> section.
+</p>
+<ul>
+  <li>
+    Go to the User Management section by selecting
+    <strong>Administration(<img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXc_ECng41ItJINk6DhPXxMokukcuxFy9eDqQwCP9GmOKgfnB-Db2mIhOivlmkttfLBXXTaqlZuD60_SF8Hw6jShVu7sGUwmPHY0up18cwxn7ufBonFD2J5B_8QOBF-GjmU?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="" width="15" height="16">) → User Management</strong>.
+  </li>
+</ul>
+<p class="wysiwyg-indent2">
+  <img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfoGidO3_nMvhKyyVc18e3gLnn5lL568gOLXbF1eElxiLuSdfPHwZmyZUowje5t5Dtp3V4TK68pzKzncAv-A57j1d1xLQezYq5eR9sCztCTvpoeUrLmCh9NS4cqUfgZG-s?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="" width="495" height="562">
+</p>
+<ul>
+  <li>
+    Next, on the Directory page: Click on the <strong>"Groups"</strong> tab.
+    Select the <strong>"confluence-backup-admin"</strong> group.
+  </li>
+</ul>
+<p class="wysiwyg-indent2">
+  <img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXc7DmDK2NHgLQCscKspNtfe9ODT5evzBfdurGEn37TFPFXNjP9iKhY_8W-pVk3oh3X3i8PI8RZQdI-u-EnWlsqMgttbc7hL3up2mYngpKhMtS8LVecRdte11GnaNlqSh40?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="">
+</p>
+<ul>
+  <li>
+    Next, on the <strong>"confluence-backup-admin"</strong> Group page, Click
+    <strong>"Add product"</strong> to assign product access to the group.
+  </li>
+</ul>
+<p class="wysiwyg-indent2">
+  <img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfVZWMq8c3s_ghy-1VWoQnb0cMOf4Xr3rvMgRziCa-7H-J9cJAGY7feest7fniuw1bG1IW185NZu22l2Ka8eAl8hUnKbxOMNHzj4cKKM9gvK7ajBUgNeBg8POEUjOUNog?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="">
+</p>
+<ul>
+  <li>
+    Next, on the Add Products to group pop up page, Find the Confluence product
+    in the list and select the <strong>"Product Admin"</strong> role from the
+    available options for Confluence.
+  </li>
+</ul>
+<p class="wysiwyg-indent2">
+  <img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdga3gy4UKAot8pzTMuXltrEz0iV9EQDYVqva5dbq-Lw1AMdkFSG3w-hbhWh5k2h78QwQ4uuuSsJ09usRjA1bdmvYqujQJTDWTdODlHvK2XlvWkyHQLbgiXgC2pbcC3Kw?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="">
+</p>
+<ul>
+  <li>
+    After following the steps outlined, the
+    <strong>"confluence-backup-admin"</strong> user group will have the
+    <strong>Confluence Product Admin</strong> role assigned to them within the
+    Atlassian ecosystem.
+  </li>
+</ul>
+<p class="wysiwyg-indent2">
+  <img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeURd63nkwVNlAJK6dsZ3Y9L3GvWHdRXSt4lrtrarV9hI0jVO4NkG__v5Q3aPZaqvyizswcWp4twBYZrUEDQbQsOSVC9ctGt9UWf5CTORNTs8uTdEtO30cZbe8D9wjLg94?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="">
+</p>
+<ul>
+  <li>
+    <strong>Add the Liam Gray Service Account (user)</strong> as a member of
+    the <strong>"confluence-backup-admin"</strong> group. The Service Account
+    will inherit the <strong>Confluence Product Admin</strong> role.
+  </li>
+</ul>
+<p class="wysiwyg-indent2">
+  <img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXe8vXn1uAs-BrhEf2CAtLuRd0t93NxyKhZUNo70HB6jKjEBLMBfH4ahPoBC-Fh1UtRxhagg4cmv02FgDzThon104Swf1J4aQW3WUDxQomIOdA_0wsIIrDiRLbuBoH7J2ys?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="">
+</p>
+<h4 id="h_01JG0NR214G18EKARV5HDJEJDC">
+  <span class="wysiwyg-color-purple110">2.1.2 Verify Product Role Assignment</span>
+</h4>
+<ul>
+  <li>
+    Log in to your Confluence instance using your administrator credentials.
+    <em>Click on the gear icon located in the top-right corner of the screen to access the administration console.</em>
+  </li>
+</ul>
+<p>
+  <img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfmxmDk1_A4o9nJLuqvXZIOII90p3xK9ntZH03HYbSzboYvkx3pjUX6olz25XhloDzoarsVsTdKMLP99aXz6aWXcjnHVYAj8WSerzVDP5tYfitq_W4jGDHTtYWE2iTJ?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="">
+</p>
+<ul>
+  <li>
+    In the administration console, click on<strong> "Settings."</strong> Under
+    "<strong>Settings,"</strong> find and click on <strong>"Security."</strong>
+    In the <strong>"Security"</strong> section, click on
+    <strong>"Global permissions."</strong>
+    <em>This will take you to the Global Permissions page, where you can manage system-wide permissions for users and groups within your Confluence instance.</em>
+  </li>
+</ul>
+<p class="wysiwyg-indent2">
+  <img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeQogyfkUV2c30p4Cz3wDvwH9I2mSGsNhVVuLi6Zp8wsMSQm-FLCtASKcAoFx2TK3z19Qxx0AMk9ez6Szs0w2HuPe2BAT_FVVNvNet2u3olHrMfQfa57N0hTtfhM5JHWtU?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="">
+</p>
+<ul>
+  <li>
+    Next, on the <strong>Global Permissions</strong> page, you will observe that
+    the<strong> "confluence-backup-admin"</strong> group is associated with the
+    <strong>"Confluence Admin"</strong> tag.
+  </li>
+</ul>
+<p class="wysiwyg-indent2">
+  <img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXccMb4Km4E6QZGvV7lj5DdV9Gz6HHkxWD-lP5lGASjOesvk_esRTfxV5bZC1DWccYmYm9OmtDlKgkID8cpHUaZKjE3ell02YlYnB4tP1d4Ua_dhrvFQDCZA-vZP9QprauI?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="">
+</p>
+<hr>
+<p>
+  <strong><span class="wysiwyg-font-size-small wysiwyg-color-pink110">Note 👉</span></strong>
+</p>
+<ul>
+  <li>
+    <span class="wysiwyg-font-size-small wysiwyg-color-pink110">The <strong>Create Space(s)</strong> <strong>permission</strong> governs the ability to create new spaces manually, but it does not affect the HYCU’s ability to restore spaces from a backup. A confluence Admin Role is enough.</span>
+  </li>
+  <li>
+    <span class="wysiwyg-font-size-small wysiwyg-color-pink110">Turning off <strong>Personal Space</strong> <strong>permissions</strong> means no future members of this group will get a personal space. This choice does not impact users in this group who already have a personal space.</span>
+  </li>
+  <li>
+    <span class="wysiwyg-font-size-small wysiwyg-color-pink110">If the group lacks the above-discussed permissions, backup and restore operations will still function.</span>
+  </li>
+</ul>
+<hr>
+<h4 id="h_01JG0NR214WJKCCMGF1RN856PH">
+  <span class="wysiwyg-color-purple110">2.1.3 Assign Space Access Permissions</span>
+</h4>
+<p>
+  When a Confluence user lacks <strong>View Permission</strong> within a Space,
+  they are effectively locked out of that specific Space. This means they cannot:
+</p>
+<ul>
+  <li>
+    <em><strong>See the Space in their list of Spaces:</strong> The Space will be hidden from their view.</em>
+  </li>
+  <li>
+    <em><strong>Access any content within the Space:</strong> This includes pages, blogs, attachments, and any other information stored there.</em>
+  </li>
+</ul>
+<p>
+  Therefore, it is crucial that the Atlassian group responsible for performing
+  backups possesses <strong>View Permission</strong> within each Space that has
+  to be backed up.
+</p>
+<h4 id="h_01JG0NR21451P2ZFRMX6F1F87T">
+  <span class="wysiwyg-font-size-small wysiwyg-color-purple110">Procedure</span>
+</h4>
+<ul>
+  <li>
+    Log in to Confluence. Find and click on the<strong> "Spaces"</strong> link,
+    usually located in the navigation menu. Find and click on the
+    <strong>"Repository"</strong> space from the list of available spaces.
+  </li>
+  <li>
+    In the <strong>"Repository"</strong> space page, navigate to:
+    <strong>Space Setting → Settings → Space access → Groups</strong>.
+  </li>
+</ul>
+<p class="wysiwyg-indent2">
+  <img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXf5ORDQjPba7LcCfeOOXoYuNNzktfDWkvXaPP7i20iLms3KCHLYT4K4mt1Mkb0CC_P0EteNgdcIYzXw3fiOKYjSlXxAoyTUPWOkB3SGsB8bo09t1BxgHD6cCdsMUKUkrG0?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="">
+</p>
+<ul>
+  <li>
+    Next, on the <strong>Space access</strong> page, click <strong>Edit</strong>
+    and <strong>Enable View (All) Permission</strong> for the
+    <strong>confluence-backup-admin</strong> group.
+  </li>
+</ul>
+<p class="wysiwyg-indent2">
+  <img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcWcy4gr55g2f1GkpK5mukvtiOYRrHQQQTGBixlxN5c3ZoatJM5R7OBzyLSdApiSnKNV5QE8Gofuph_188DDk1EOmivDeH4KqdnurLo2c1BiyJtEywAErGEDVN1sIjQdQ?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="">
+</p>
+<p class="wysiwyg-indent2">
+  <img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeaGreSkLMsxBwK5GO-aWgzmwRDxWqvSE9m_XyRfk9IE-YOW4VGwJxymNKcDmeFDzX6VO1joJW0D6z4IdlIOT74-G9CV6XEx9LUPfo99syvp82rW-DDPti4ldBuHUlcKnI?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="">
+</p>
+<hr>
+<p>
+  <span class="wysiwyg-color-pink110"><strong><span class="wysiwyg-font-size-small">Note 👉</span></strong></span>
+</p>
+<p>
+  <span class="wysiwyg-font-size-small wysiwyg-color-pink110">In the above example, you granted the backup group <strong>“View Permission”</strong> permission within the specific Space. However, this process can be easily scaled to encompass multiple Spaces by utilizing the <strong>"Add people to all spaces"</strong> button, which allows for bulk permission assignment. For further information, please refer to the relevant <em><a href="https://confluence.atlassian.com/confkb/how-to-bulk-update-space-permissions-to-add-a-group-or-an-user-to-multiple-spaces-at-once-1442906300.html#:~:text=How%20to%20bulk%20update%20Space%20permissions%20to%20add,Spaces%20or%20only%20on%20Personal%20Spaces%3A%20More%20items" target="_blank" rel="noopener noreferrer">Atlassian article</a>.</em></span>
+</p>
+<p>
+  <img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXd_atMb5LhW8yFz0-ijjgx_tF3jcbKsj8P1fUYfi4AqKoxZcJovJ7vD2RPWi7XciGmHT9Ye7s9jZP4XA1uGIODDptWgJVnmpHBOMcH4Hj5w-o-3zbjXAJekFmAW_P8G45M?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="">
+</p>
+<hr>
+<h3 id="h_01JG0NR214XJ6FS1EX5VX6JAV6">
+  <span class="wysiwyg-color-purple110">2.2 Restore Permissions</span>
+</h3>
+<p>
+  In the previous steps, you only provided minimal permission (View) on a Confluence
+  Space for HYCU to perform a backup. However,
+  <span class="wysiwyg-underline wysiwyg-color-black70"><em>View permission alone is insufficient for restoring Confluence data</em></span>.
+  The user or group performing the restore must have
+  <strong>"Add permission"</strong> within the Space.
+</p>
+<h4 id="h_01JG0NR214AAQCRX22TAF29X9M">
+  <span class="wysiwyg-color-purple110">2.2.1 Approaches</span>
+</h4>
+<p>Here are two approaches to address this requirement:</p>
+<h4 id="h_01JG0NR214YHPPC7HS179E27TS">
+  <span class="wysiwyg-font-size-small wysiwyg-color-purple110">1. Granting Additional Permissions to the Backup Group:</span>
+</h4>
+<ul>
+  <li>
+    <strong>Grant Add permission</strong> to the existing
+    <strong>"confluence-backup-admin"</strong> group within the Space.
+    <em>This approach simplifies management, but may increase security risks as HYCU will have restore (write) permissions at all times.</em>
+  </li>
+</ul>
+<h4 id="h_01JG0NR2147Q3A33S2RT0NYXC6">
+  <span class="wysiwyg-font-size-small wysiwyg-color-purple110">2. Granting Additional Permissions to the dedicated Restore Group:</span>
+</h4>
+<ul>
+  <li>
+    <strong>Create a new dedicated group</strong> (e.g., "confluence-restore-admin").
+  </li>
+  <li>
+    <strong>Grant Add permission</strong> to this new group within the Space.
+  </li>
+  <li>
+    <strong>Temporarily add the backup user(s)</strong> to this group only when
+    a restore is required.
+  </li>
+  <li>
+    <strong>Remove the user(s)</strong> from the restore group once the restore
+    is complete.
+  </li>
+</ul>
+<p>
+  This second approach provides a more secure and granular control over restore
+  permissions by limiting access to a specific group and only granting it when
+  necessary. We will describe the latter procedure in more details.
+</p>
+<h4 id="h_01JG0NR214DKGNXBAZKBZ3QTPE">
+  <span class="wysiwyg-color-purple110">2.2.2 Procedure</span>
+</h4>
+<p>
+  <strong>Using a dedicated Restore Group</strong>
+</p>
+<ul>
+  <li>
+    For this exercise, the logged-in user should have either the org-admin or
+    site-admin privileges and the <strong>confluence-restore-admin</strong> group
+    has already been created.
+  </li>
+</ul>
+<p class="wysiwyg-indent2">
+  <img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcYy9XhmwllT8O_3r9l7m7FhG6VnVIcLRmwY2xLrbyaQGAlWMa0_R2ZUR56fNkYsuSCIbbfeSkxg01pMTuDymUoC5Fh4aXOV6z6YFvCzVIID8jsz8WVKCUWxCpO18p3nQ?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="">
+</p>
+<table>
+  <tbody>
+    <tr>
+      <td style="width: 146.75px; background-color: #d3d3d3;" colspan="1" rowspan="1">
+        <p>
+          <strong><span class="wysiwyg-font-size-small">Group</span></strong>
+        </p>
+      </td>
+      <td style="width: 146.75px; background-color: #d3d3d3;" colspan="1" rowspan="1">
+        <p>
+          <strong><span class="wysiwyg-font-size-small">Global Permission</span></strong>
+        </p>
+      </td>
+      <td style="width: 146.75px; background-color: #d3d3d3;" colspan="1" rowspan="1">
+        <p>
+          <strong><span class="wysiwyg-font-size-small">Space access</span></strong>
+        </p>
+      </td>
+      <td style="width: 146.75px; background-color: #d3d3d3;" colspan="1" rowspan="1">
+        <p>
+          <strong><span class="wysiwyg-font-size-small">Description</span></strong>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 146.75px;" colspan="1" rowspan="1">
+        <p>
+          <span class="wysiwyg-font-size-small"><a href="https://admin.atlassian.com/o/d9cef7dc-16c4-4939-a08d-f1652bb790c8/groups/35d3e237-b53a-4345-a3c2-a9e4d3ba61e5">confluence-restore-admin</a></span>
+        </p>
+      </td>
+      <td style="width: 62.2125px;" colspan="1" rowspan="1">
+        <p>
+          <span class="wysiwyg-font-size-small">None</span>
+        </p>
+      </td>
+      <td style="width: 64.825px;" colspan="1" rowspan="1">
+        <p>
+          <span class="wysiwyg-font-size-small">View All, Add</span>
+        </p>
+      </td>
+      <td style="width: 382.212px;" colspan="1" rowspan="1">
+        <p>
+          <span class="wysiwyg-font-size-small">Users who are part of this group can;</span>
+        </p>
+        <ul>
+          <li>
+            <span class="wysiwyg-font-size-small">See the Space in their list of Spaces.</span>
+          </li>
+          <li>
+            <span class="wysiwyg-font-size-small">Access any content within the Space</span>
+          </li>
+          <li>
+            <span class="wysiwyg-font-size-small">Able to Add content within the Space; This includes pages, blogs, attachments, and any other information stored there.</span>
+          </li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<ul>
+  <li>
+    Log in to Confluence. Navigate to the <strong>"Spaces"</strong> section and
+    locate the <strong>"Repository"</strong> space, which contains the firm's
+    wiki and troubleshooting articles.
+  </li>
+  <li>
+    On the <strong>"Repository"</strong> space page, navigate to:
+    <strong>Space Setting → Settings → Space access → Groups</strong>.
+  </li>
+  <li>
+    Next, on the <strong>Space access</strong> page, Click <strong>Edit</strong>
+    and Enable Add Permission for the <strong>confluence-restore-admin</strong>
+    group.
+  </li>
+</ul>
+<p class="wysiwyg-indent2">
+  <img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeGwqsoNfg4RzXBeGxxEF3xAbLTPW9klKx2z7nKTWR1nSG-76rjw5NvYv1Qns1cPkft7eRaDcNsnkjgEpya_LIB80FYeTqWs2mGZpUAx4VUX9FT8YW4k-2WfDXmrNQnMHg?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="">
+</p>
+<hr>
+<p>
+  <span class="wysiwyg-color-pink110"><strong><span class="wysiwyg-font-size-small">Note 👉</span></strong></span>
+</p>
+<p>
+  <span class="wysiwyg-font-size-small wysiwyg-color-pink110">In the above example, you granted the restore group <strong>"Add"</strong> permission within the specific Space. However, this process can be easily scaled to encompass multiple Spaces by utilizing the <strong>"Add people to all spaces"</strong> button, which allows for bulk permission assignment. For further information, please refer to the relevant <a href="https://confluence.atlassian.com/confkb/how-to-bulk-update-space-permissions-to-add-a-group-or-an-user-to-multiple-spaces-at-once-1442906300.html#:~:text=How%20to%20bulk%20update%20Space%20permissions%20to%20add,Spaces%20or%20only%20on%20Personal%20Spaces%3A%20More%20items" target="_blank" rel="noopener noreferrer"><em>Atlassian article.</em></a></span>
+</p>
+<p>
+  <img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcQkMdHLEbTk68O08sxIlXETgj8SRoelk9VPgNSJEazKGtIeyJVfzFxzsvIHweGMOjN1LImBV-2q0Xgu7mBDvCLyM8CoxIjo27V9XqXcKW0sJrFots3SHLUVmaXy-nN_P0?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="">
+</p>
+<hr>
+<ul>
+  <li>
+    Now, the <strong>"confluence-restore-admin"</strong> group possesses the
+    necessary additional permissions for restore operations. The user
+    <strong>"Liam Gray,"</strong> a default member of the
+    <strong>"confluence-backup-admin"</strong> group, can be dynamically added
+    to the <strong>"confluence-restore-admin"</strong> group whenever a restore
+    operation is required.
+  </li>
+</ul>
+<p class="wysiwyg-indent2">
+  <img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdT8Albju0gDCalkT3h7MdQBwWlcly52W7ZyBZL002UG-f9y7w6iMB5AKRoAmqLywSgUzT1KSyJQCuESDX8noH8klRBCZ_QzUV74lwJG7BYj4SIba-Ax3Cs2m68EtN8NXE?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="">
+</p>
+<ul>
+  <li>
+    Once the restore task is successfully completed,
+    <strong>Liam Gray's</strong> membership in the
+    <strong>"confluence-restore-admin"</strong> group can be revoked, effectively
+    removing his restore privileges until the next restore operation is necessary.
+  </li>
+</ul>
+<p class="wysiwyg-indent3">
+  <img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcCziSWkIEPM2rLlolxMNL5w4dzSY9NCQkjI_ZMg0yVtOWUEu1KZqbbVg4RdJO2WguZxVU60PaGCeaVo5zgbOjHsFpqsQm6bUWb-lxWKI-xdvle_pKPaP38b-FUTDnnjwk?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="">
+</p>
+<h2 id="h_01JG0TCGYNR788VQXQNKMH9SAH">
+  <span class="wysiwyg-color-purple110">3. Add Atlassian Confluence as an R-Cloud module in HYCU R-Cloud</span>
+</h2>
+<p>
+  Let’s cover the procedure for adding
+  <strong>Atlassian Confluence as a Source.</strong>
+</p>
+<ul>
+  <li>
+    Login to HYCU R-Cloud, click on the
+    <strong>Settings (<img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcFrufEbnw6YSxNpbc8tpi7YMBvgR4iWHx4kfPgt5CvtWMiTejZzgNd8hMLZSK29C40ZvlDX3HWlwMQtzbwQOo-K9ty-5rzh0QnoC-QrFz4eaWEHbCkLBWqSrySRuHtx10?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="">)</strong>
+    in the top-right corner of the screen.
+  </li>
+  <li>
+    Click on the <strong>Sources</strong> tab.
+  </li>
+</ul>
+<p class="wysiwyg-indent2">
+  <img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcv54SSp2lGV6BTCShorZrO_K8KbfDOmk8J9oLvr8ZV-F6FauZmqAWiD0F9Taq44vvKiZQK4BGwsCxBiOSAc-wpedlEArCMsBD2gzZ_Ra100lw8aRmiPpd3vSZQO9yhLrc?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="">
+</p>
+<ul>
+  <li>
+    In the Sources dialog box, select the <strong>SAAS</strong> page and click
+    <strong><img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfcyA2kOMW1GZhpuTsjyzvY59lBSIVkJ536xrybngEOjfOwBjNUJiVFPsitnlfhgRluOMvjB6-P-5-vEpEHkNO8TDkauei3NzVBwg6vOf562PYplkIUg110hgGjfLwquco?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="">New</strong>.
+  </li>
+</ul>
+<p class="wysiwyg-indent2">
+  <img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcBq1A-6-Xlv-a8qf_gEjCnCSPQ_xkCOrXKxKjPzZtXmaWEMLEa0D3uzNgjOBTU2ottIkRMT9PTwvzITzXAu4ALAC_Vwbh3_4OncTHoGJ9NtnF-yRUlPilS11fMsTxcjAs?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="">
+</p>
+<ul>
+  <li>
+    On the <strong>Sources → New</strong> page, enter the following information,
+    and click <strong>Add</strong>. This step will add and validate the Service
+    Account.
+  </li>
+</ul>
+<table style="height: 177px;">
+  <tbody>
+    <tr style="height: 22px;">
+      <td style="width: 125px; height: 22px;" colspan="1" rowspan="1">
+        <p>
+          <strong><span class="wysiwyg-font-size-small">R-Cloud Module</span></strong>
+        </p>
+      </td>
+      <td style="width: 155px; height: 22px;" colspan="1" rowspan="1">
+        <p>
+          <span class="wysiwyg-font-size-small">Atlassian Confluence</span>
+        </p>
+      </td>
+      <td style="width: 385px; height: 22px;" colspan="1" rowspan="1">
+        <p>
+          <span class="wysiwyg-font-size-small">Select the R-Cloud module.</span>
+        </p>
+      </td>
+    </tr>
+    <tr style="height: 22px;">
+      <td style="width: 125px; height: 22px;" colspan="1" rowspan="1">
+        <p>
+          <strong><span class="wysiwyg-font-size-small">Display name</span></strong>
+        </p>
+      </td>
+      <td style="width: 155px; height: 22px;" colspan="1" rowspan="1">
+        <p>
+          <span class="wysiwyg-font-size-small">User defined</span>
+        </p>
+      </td>
+      <td style="width: 385px; height: 22px;" colspan="1" rowspan="1">
+        <p>
+          <span class="wysiwyg-font-size-small">Assign a name to identify the R-Cloud module.</span>
+        </p>
+      </td>
+    </tr>
+    <tr style="height: 67px;">
+      <td style="width: 125px; height: 67px;" colspan="1" rowspan="1">
+        <p>
+          <strong><span class="wysiwyg-font-size-small">Protection Set</span></strong>
+        </p>
+      </td>
+      <td style="width: 155px; height: 67px;" colspan="1" rowspan="1">
+        <p>
+          <span class="wysiwyg-font-size-small">User defined</span>
+        </p>
+      </td>
+      <td style="width: 385px; height: 67px;" colspan="1" rowspan="1">
+        <p>
+          <span class="wysiwyg-font-size-small">Select the protection set to which you want to add the R-Cloud module. By default, the R-Cloud module is added to the currently selected protection set.</span>
+        </p>
+      </td>
+    </tr>
+    <tr style="height: 22px;">
+      <td style="width: 125px; height: 22px;" colspan="1" rowspan="1">
+        <p>
+          <strong><span class="wysiwyg-font-size-small">Organization Name</span></strong>
+        </p>
+      </td>
+      <td style="width: 155px; height: 22px;" colspan="1" rowspan="1">
+        <p>&nbsp;</p>
+      </td>
+      <td style="width: 385px; height: 22px;" colspan="1" rowspan="1">
+        <p>
+          <span class="wysiwyg-font-size-small">Retrieve the Organization Name as explained in,<span class="wysiwyg-underline"><em> <a href="/hc/en-us/articles/17075992141724#h_01JG0NR214MT69SBWBNTG962TN">1.1 Organization Name</a></em></span></span>
+        </p>
+      </td>
+    </tr>
+    <tr style="height: 44px;">
+      <td style="width: 125px; height: 44px;" colspan="1" rowspan="1">
+        <p>
+          <strong><span class="wysiwyg-font-size-small">Service Account</span></strong>
+        </p>
+      </td>
+      <td style="width: 155px; height: 44px;" colspan="1" rowspan="1">
+        <p>
+          <span class="wysiwyg-font-size-small">User email ID: API token copied earlier</span>
+        </p>
+      </td>
+      <td style="width: 385px; height: 44px;" colspan="1" rowspan="1">
+        <p>
+          <span class="wysiwyg-font-size-small">Enter the User Email Address and API token as explained in <span class="wysiwyg-underline"><em><a href="/hc/en-us/articles/17075992141724#h_01JG0NR214RKRMZ2DHACFCB8C2">1.2 User Email Address and API Token</a></em></span> chapter.</span>
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<p>
+  <strong><span class="wysiwyg-font-size-small wysiwyg-color-pink110">✅Multiple Service Accounts in HYCU</span></strong>
+</p>
+<p>
+  <strong><span class="wysiwyg-font-size-small wysiwyg-color-pink110">Problem:</span></strong>
+</p>
+<ul>
+  <li>
+    <span class="wysiwyg-font-size-small wysiwyg-color-pink110">HYCU relies on Atlassian user accounts for backups.</span>
+  </li>
+  <li>
+    <span class="wysiwyg-font-size-small wysiwyg-color-pink110">Due to Atlassian throttling, a single Atlassian user account can become a performance bottleneck in large-scale environments.</span>
+  </li>
+</ul>
+<p>
+  <strong><span class="wysiwyg-font-size-small wysiwyg-color-pink110">Solution:</span></strong>
+</p>
+<p>
+  <span class="wysiwyg-font-size-small wysiwyg-color-pink110">Adding multiple service accounts in HYCU can distribute the backup load, improving performance and efficiency. The recommendation is to add 3 service accounts as a starting point.</span>
+</p>
+<p>
+  <span class="wysiwyg-font-size-small wysiwyg-color-pink110"><img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeXCVkPZ0gQAKbkSZMfVRSE-Ooy9YzyfIIlL3ycxYLqjZarfMVMNkt6nduZC7gfUlouWH7-W2XhWIMCfOpA21d5JcbGjbvWmTiL9rgjPsEFJOIpFXu-3PYAdAyGZQ8ppRQ?key=RpdGUlEladyv5D6EoeMhvkhJ" alt=""></span>
+</p>
+<hr>
+<ul>
+  <li>
+    Once the service accounts have been added, click <strong>Save</strong>.
+  </li>
+</ul>
+<p class="wysiwyg-indent2">
+  <img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdxdLDrlvUWlR-2g7O4_QHtIpPP9tx8qiMSuT938dYI7DGLscEskYoPN_i0zHBxCRQIP7jSiaiiIkxgU_sQZopMXk5riGPs7XL6C290wnNvVgcVnrd-aUewDrY5vbQcLRo?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="">
+</p>
+<ul>
+  <li>
+    The R-Cloud module is added to the list of SAAS sources. The status of the
+    added source should be green (<img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeQhyWE4a3bMJfwks_PDPUTAj51wWIXEIWcw_2vKdZUGxVJEDtsO1pce67O6su-70nf9Pia5uZpv7evTBze-S5nVV_Xf6_N4S3C2Q6d9alrkeRG0MpgHLVyWZz6VJlYGE4?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="">).
+    Click Close.
+  </li>
+</ul>
+<p class="wysiwyg-indent2">
+  <img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeIZb8_twrP3PXtMLyooIA-f5sjC_zQtpjQFEyG9hgdRG5GRTX9VnxLhzU-y3gzWOS2rbpFf70uTXwQw0P7k4J423_Mmy-37-S0gxOXzNRcMNnnk9-VX7uiyHQ5YNtSFw?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="">
+</p>
+<hr>
+<p>
+  <span class="wysiwyg-color-pink110"><strong><span class="wysiwyg-font-size-small">Note 👉</span></strong></span>
+</p>
+<p>
+  <span class="wysiwyg-font-size-small wysiwyg-color-pink110">Once the Atlassian Confluence R-Cloud module is added successfully, a synchronization task initiates, discovering the product plugins. We can then proceed to protect them by assigning a pre-existing or custom policy. HYCU R-Cloud automatically<strong> synchronizes SaaS applications</strong> at regular intervals. Users can also manually <strong>Refresh(<img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcS6RRilZ4FIHfkChz8gqFouE5HOTonBRgW71imCZHo0Bqs2IN9ykO-cm1ScSyH6M17-MHA33aYOWGEARZ4q_-CTGocKQAH59_Tx_ShSUna24iE-blJjvh9SHdyX5C850Y?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="" width="18" height="17">)</strong> the list at any time.</span>
+</p>
+<p>
+  <img title="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXclUb2VDim8A3FZnfZotQwAA1G8Jmbjv4rlpqHqYCsHaWscRC9ae7D-PZbTNoTp5xUhJGkGjI35kW9R3Bqly3QxTSODu0giIJ4xqBAjkP30krJPL0bJF5GNHdZQ4Z49B_4?key=RpdGUlEladyv5D6EoeMhvkhJ" alt="">
+</p>
+<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>

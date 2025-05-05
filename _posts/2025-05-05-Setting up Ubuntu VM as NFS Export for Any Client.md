@@ -36,6 +36,12 @@ OR
     - sync: Ensure data is written to disk before the server replies.
     - no_subtree_check: Disables subtree checking, which can improve performance in some cases.
 
+**Permissions:** Ensure the `/mnt/nfs_share` directory on the NFS server has the correct permissions. A common setting is to give write access to **"others"**:
+
+```
+sudo chmod 777 /mnt/nfs_share
+```
+
 **4\. Export the share:**  
 Apply the changes made to /etc/exports by running:
 

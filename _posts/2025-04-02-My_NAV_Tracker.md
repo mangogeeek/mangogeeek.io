@@ -1,24 +1,18 @@
-# Automated Profit Booking System
+# Profit Booking System Analysis
 
-**Sheet Name**: `MUF:NIFTY_Alpha_50`  
-**Profit Threshold**: 6% above invested value  
-**NAV Source**: [API](https://api.mfapi.in/mf/152177/latest)
+**Sheet Link**: [MUF:NIFTY_Alpha_50](https://docs.google.com/spreadsheets/d/1DigvSVPG7mlkDYYarR03dAUys00Zd-sgA3cWXXwEHTU/edit#gid=403913121)
 
-* * *
+## 🔍 Core Methodology
 
-## 📊 Key Formulas
+### 1\. Fundamental Formulas
 
-| Cell | Formula | Purpose |
-| --- | --- | --- |
-| **B1** | `=getNAV()` (script) | Current NAV (auto-updated) |
-| **B3** | `=SUMIF(E:E,"Buy",G:G)-SUMIF(E:E,"Sell",G:G)` | Units held |
-| **B4** | `=SUM(H:H)` | Net invested value |
-| **B6** | `=B3*B1` | Current portfolio value |
-| **B8** | `=IF(B4=0, 0, (B6-B4)/B4)` | Unrealized profit % |
-| **B10** | `=IF(B8>6%, (B6-B4*1.06)/B1, "")` | Units to sell for 6% profit |
-| **B11** | Script-controlled status | Execution logs |
+`Profit % = (Current Value - Invested Value) / Invested Value`
 
-* * *
+Where:
+
+**Current Value =** `Units × Current NAV (B3 × B1)`
+
+**Invested Value =** `Total Buy Amounts - (Units Sold × Average Buy NAV)`
 
 ## 🤖 Scripts
 
@@ -34,23 +28,6 @@ function getNAV() {
     return null;
   }
 }
-
-```
-
-### 2\. Profit Booker (`autoBookProfit()`)
-
-```JavaScript
-function autoBookProfit() {
-  const sheet = SpreadsheetApp.getActive().getSheetByName("MUF:NIFTY_Alpha_50");
-  const [nav, units, invested] = sheet.getRange("B1,B3,B4").getValues().flat();
-  const profit = (nav*units - invested)/invested;
-  
-  if (profit > 0.06) {
-    const sellUnits = ((nav*units - invested*1.06)/nav).toFixed(2);
-    sheet.appendRow([new Date(), "Sell", nav, -sellUnits, -(sellUnits*nav)]);
-    sheet.getRange("B11").setValue(`✅ Sold ${sellUnits} units @ ${nav}`);
-  }
-}
 ```
 
 ### 3\. Auto-Refresh (`refreshNAV()`)
@@ -64,56 +41,113 @@ function refreshNAV() {
     sheet.getRange("B2").setValue(new Date()).setNumberFormat("yyyy-mm-dd hh:mm:ss");  
   }  
 }
-
 ```
 
-## ⚙️ Triggers
+2.  Key Components
+    
 
-- **🕒 Daily NAV Update**: 6:45 PM IST
+| Cell | Formula | Purpose |
+| --- | --- | --- |
+| B4  | `=SUMIF(E:E,"Buy",H:H)-SUMIF(E:E,"Sell",G:G)*B5` | True invested value |
+| B10 | `=IF(B8>6%,(B6-B4)/B1,"None")` | Units to sell |
+
+2.  ## 📊 How It Works
     
-- **🛠️ Manual Controls**:
+    ### Transaction Flow
     
-    - `🔔 NAV Tools > Refresh NAV Now`
+      
+    <br/>
+    
+    ```mermaid
+    graph TD
+        A[Buy Transaction] --> B[Increase Invested Value]
+        C[Sell Transaction] --> D[Reduce Invested Value by Cost Basis]
+        B --> E[Update Avg NAV]
+        D --> E
+        E --> F[Calculate Profit%]
+        F --> G{Profit >6%?}
+        G -->|Yes| H[Sell Units]
+        G -->|No| I[Monitor]
+        H --> D
+    
+    ```
+    
+
+* * *
+
+### Mathematical Proof
+
+To reset profit to 0%:
+
+```
+Units to Sell = (Current Value - Invested Value) / Current NAV
+```
+
+**Example**:
+
+- Current Value = ₹4,146,512
+    
+- Invested Value = ₹3,781,935
+    
+- NAV = ₹14
+    
+- Units to Sell = `(4,146,512 - 3,781,935)/14 = 26,041 units`
+    
+
+## 💡 Key Insights
+
+1.  **Cost Basis Isolation**
+    
+    - Uses original purchase price (Avg NAV) for sold units
         
-    - `💰 Auto-Book Profit > Check & Sell`
+    - Not affected by current NAV fluctuations
+        
+2.  **Full Position Exit**
+    
+    - Only complete sale resets profit to 0%
+        
+    - Partial sales maintain proportional profit
+        
+3.  **Self-Consistent System**
+    
+    - No circular references
+        
+    - All values update atomically
         
 
-* * *
+## ⚙️ Implementation Guide
 
-## 🔄 Workflow
+### 1\. Setup Required
 
-1.  **NAV Updates** → `B1` (auto)
+- **Column D-H**: Record all transactions
     
-2.  **Profit Calculation** → `B8`
+- **Formulas**: Implement in Column B as shown above
     
-3.  **Auto-Sell** → Triggers when `B8 > 6%`
+- **Formatting**:
     
-4.  **Logs** → `B11` & Columns `D-H`
-    
-
-* * *
-
-## 🚨 Error Handling
-
-- **Failed API Calls**: Logs to `B11`
-    
-- **Sheet/Range Errors**: Console alerts
-    
-- **Data Validation**: Checks numeric values
-    
-
-* * *
-
-## 💡 Pro Tips
-
-**Backup NAV Source**:
-
 ```Excel
-=IFERROR(getNAV(), GOOGLEFINANCE("MUTF_IN:BAND_NIFT_ALPH_1EDZ6YT", "nav"))
+Conditional Formatting:
+- B8 >6% → Yellow
+- B10 ≠ "None" → Green
 ```
 
-**Telegram Alerts** (Add to script):
+### 2\. Automation Script
 
 ```JavaScript
-UrlFetchApp.fetch(`https://api.telegram.org/botTOKEN/sendMessage?chat_id=ID&text=📈 NAV: ${nav}`);
+function autoBookProfit() {
+  const sheet = SpreadsheetApp.getActive().getSheetByName("MUF:NIFTY_Alpha_50");
+  const [nav, units, invested] = sheet.getRange("B1,B3,B4").getValues().flat();
+  const profit = (nav*units - invested)/invested;
+
+  if (profit > 0.06) {
+    const sellUnits = ((nav*units - invested)/nav).toFixed(2);
+    sheet.appendRow([
+      new Date(), 
+      "Sell", 
+      nav, 
+      -sellUnits, 
+      -(sellUnits*nav)
+    ]);
+  }
+}
 ```

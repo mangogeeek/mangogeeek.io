@@ -1,6 +1,7 @@
-This document outlines the standardized process for preparing a **generalized disk image ** for Nutanix VMs, including container mounting, disk identification, image cleanup, conversion, sysprep, and upload.
+This document outlines the standardized process for preparing a **generalized disk image** for Nutanix VMs, including container mounting, disk identification, image cleanup, conversion, sysprep, and upload.
 
 ------------
+[2. Mount the Nutanix Container](#2-mount-the-nutanix-container)
 
 # 1. VM Disk Identification
 ### 1.1 Locate VM Disks Using Nutanix CLI
@@ -203,3 +204,6 @@ vmkfstools -i hycu-r-shield-5.2.0-805.vmdk -d thin hycu-r-shield-5.2.0-805-thin.
 
 ------------
 
+
+[2. mount the nutanix container]: 2. mount the nutanix container "# 2. Mount the Nutanix Container"
+[26]: 2-mount-the-nutanix-container

@@ -1,5 +1,3 @@
-# Prep Data Mover (Rocky) Image as R-Shield
-
 ---
 
 # Step 1: Log in to the Data Mover VM
@@ -66,7 +64,6 @@ sudo vi /etc/ssh/sshd_config
 Ensure the following parameters are present and **not commented out.** 
 
 > **⚠️ Note:** Port `42222` may still be active. Keeping both ports allows fallback access.
-> 
 
 ```bash
 Port 22
@@ -170,13 +167,8 @@ Run test suite:
 make check
 ```
 
-> 
-> 
-> 
 > ⚠️**Known Issue (RHEL/Rocky 9):** OpenSSL disables SHA-1 by default, which may cause
-> 
 > `test-pe` failures.
-> 
 
 If tests fail, rerun:
 

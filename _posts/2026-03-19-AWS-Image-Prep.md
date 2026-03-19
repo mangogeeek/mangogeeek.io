@@ -1,5 +1,3 @@
----
-
 # Step 1: Log in to the Data Mover VM
 
 Log in to the Data Mover VM as the **root user** on port `42222`, using your SSH private key.

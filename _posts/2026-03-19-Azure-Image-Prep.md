@@ -1,4 +1,4 @@
-# Azure- Prep Data Mover (Rocky) Image as R-Shield (1)
+# Azure- Prep Data Mover (Rocky) Image as R-Shield
 
 ---
 
